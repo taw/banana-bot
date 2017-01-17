@@ -57,5 +57,7 @@ class BananaBot
 
   def reply(text)
     @message.reply(text: text)
+  rescue
+    warn $!
   end
 end
